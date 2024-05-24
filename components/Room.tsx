@@ -10,7 +10,7 @@ import RecordRTC, { invokeSaveAsDialog } from "recordrtc";
 import Hydration from "./Hydration";
 import dynamic from "next/dynamic";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://webrtc-next-express.onrender.com/");
 
 dynamic(() => import("./Room"), {
  ssr: false,
